@@ -1,0 +1,27 @@
+{
+    "name": "Mobusi Tech Test - API Rest",
+    "description": "API Rest for Mobusi Technical Test",
+    "keywords": ["mobusi","technical","test", "backend"],
+    "homepage": "http://github.com/thefuriouscoder/mobusi-test-back",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diego Rin Martin",
+            "email": "yosoy@diegorinmartin.com",
+            "homepage": "http://www.diegorinmartin.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "slim/slim": "^3.1",
+        "slim/php-view": "^2.0",
+        "monolog/monolog": "^1.17",
+        "propel/propel": "~2.0@dev"
+    },
+    "autoload": {
+        "classmap": ["App/Models/"],
+        "psr-4": {
+            "Mobusi\\App\\": "App"
+        }
+    }
+}

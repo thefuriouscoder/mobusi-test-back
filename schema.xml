@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database package="api" name="mobusi" defaultIdMethod="native" schema="public">
+    <table name="venue">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" description="id_localizacion" />
+        <column name="name" type="varchar" required="true" size="255" primaryString="true" description="localización"/>
+    </table>
+    <table name="event">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" description="id_evento" />
+        <column name="venue_id" type="integer" required="true" description="id_localizacion" />
+        <column name="picture" type="varchar" required="true" description="img" />
+        <column name="description" type="longvarchar" required="true" description="txt" />
+        <foreign-key foreignTable="venue">
+            <reference local="venue_id" foreign="id"/>
+        </foreign-key>
+    </table>
+</database>
