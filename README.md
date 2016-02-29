@@ -1,6 +1,6 @@
 # Mobusi Technical Test - API Rest
 
-Built with Slim Framework 3 and Propel 2. Used Postgres 9.4 as RDBMS
+Built with Slim Framework 3 and Propel 2. Used Postgres 9.4 as RDBMS. Testing with Codeception.
 
 * Clone this repository and change into directory.
 * composer install
