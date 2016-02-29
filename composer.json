@@ -16,7 +16,8 @@
         "slim/slim": "^3.1",
         "slim/php-view": "^2.0",
         "monolog/monolog": "^1.17",
-        "propel/propel": "~2.0@dev"
+        "propel/propel": "~2.0@dev",
+        "codeception/codeception": "*"
     },
     "autoload": {
         "classmap": ["App/Models/"],

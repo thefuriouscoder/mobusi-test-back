@@ -33,7 +33,7 @@ class EventController
         $eventId = $args["id"];
         $event = \EventQuery::create()->findPk($eventId);
 
-        echo(json_encode($event->toArray(null,null,\Propel\Runtime\Map\TableMap::TYPE_FIELDNAME)));
+        echo(json_encode($event->toArray(\Propel\Runtime\Map\TableMap::TYPE_FIELDNAME)));
     }
 
     /**
